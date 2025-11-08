@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Olinto Duarte | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <div class="logo">Patrick <span style="color: var(--accent);">Duarte</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">BEM-VINDO AO MEU PORTFÓLIO</div>
+            <h1>Olá, eu sou Patrick Olinto Duarte</h1>
+            <div class="typing-text">
+                <span id="typedText"></span><span class="typing-cursor"></span>
+            </div>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-briefcase"></i> Ver Projetos
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Entre em Contato
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stat-card">
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-label">Projetos Concluídos</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" data-target="30">0</div>
+            <div class="stat-label">Clientes Satisfeitos</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Anos de Experiência</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">Xícaras de Café</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">Sobre Mim</h2>
+        <p class="section-subtitle">Conheça um pouco mais sobre minha trajetória e habilidades</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    <strong>Olá!</strong> Sou um desenvolvedor full stack apaixonado por criar experiências digitais 
+                    incríveis que combinam design elegante com código limpo e eficiente. Minha jornada na tecnologia 
+                    começou há mais de 5 anos, e desde então venho me dedicando a transformar ideias em realidade.
+                </p>
+                <p>
+                    Especializado em desenvolvimento web moderno, trabalho com as mais recentes tecnologias do mercado, 
+                    sempre buscando entregar soluções que não apenas atendam, mas superem as expectativas dos clientes. 
+                    Acredito que a tecnologia deve ser acessível, intuitiva e, acima de tudo, resolver problemas reais.
+                </p>
+                <p>
+                    Quando não estou codificando, você pode me encontrar explorando novas tecnologias (especialmente em IA), 
+                    contribuindo para projetos open source, automatizando workflows complexos com N8N, ou compartilhando 
+                    conhecimento com a comunidade dev.
+                </p>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="about-image">👨‍💻</div>
+            </div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <span class="skill-icon">⚛️</span>
+                <div class="skill-name">React</div>
+                <div class="skill-level">Avançado</div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">📗</span>
+                <div class="skill-name">Node.js</div>
+                <div class="skill-level">Avançado</div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🐍</span>
+                <div class="skill-name">Python</div>
+                <div class="skill-level">Intermediário</div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🤖</span>
+                <div class="skill-name">N8N</div>
+                <div class="skill-level">Avançado</div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🎨</span>
+                <div class="skill-name">UI/UX</div>
+                <div class="skill-level">Intermediário</div>
+            </div>
+            <div class="skill-card">
+                <span class="skill-icon">🚀</span>
+                <div class="skill-name">DevOps</div>
+                <div class="skill-level">Intermediário</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title">Serviços</h2>
+        <p class="section-subtitle">Soluções completas para suas necessidades digitais</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de sites e aplicações web responsivas, modernas e otimizadas para todos os dispositivos.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Aplicativos Mobile</h3>
+                <p>Desenvolvimento de apps nativos e híbridos para iOS e Android com foco em performance.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Design de interfaces intuitivas e experiências de usuário memoráveis e funcionais.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>API Development</h3>
+                <p>Desenvolvimento de APIs RESTful robustas e escaláveis para integração de sistemas.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Manutenção</h3>
+                <p>Suporte contínuo, atualizações e otimização de projetos existentes.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Consultoria</h3>
+                <p>Consultoria técnica para escolha das melhores tecnologias e arquitetura de projetos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <p class="section-subtitle">Alguns dos meus trabalhos mais recentes</p>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    🛍️
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce Platform</h3>
+                    <p>Plataforma completa de e-commerce com carrinho de compras, sistema de pagamento integrado e painel administrativo avançado.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Stripe</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="far fa-calendar"></i> 2024</span>
+                        <span class="project-status">Concluído</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="mobile">
+                <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    📱
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>App de Produtividade</h3>
+                    <p>Aplicativo mobile para gerenciamento de tarefas com sincronização em nuvem, notificações push e modo offline.</p>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Redux</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="far fa-calendar"></i> 2024</span>
+                        <span class="project-status">Concluído</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="design">
+                <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    🎨
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Designer</h3>
+                    <p>Sistema para criação de portfólios personalizados com templates modernos, editor drag-and-drop e exportação.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">API REST</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="far fa-calendar"></i> 2024</span>
+                        <span class="project-status">Concluído</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="web">
+                <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    🎓
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Plataforma de Cursos</h3>
+                    <p>LMS completo com sistema de videoaulas, exercícios interativos, certificados e gamificação.</p>
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="far fa-calendar"></i> 2025</span>
+                        <span class="project-status">Em Andamento</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="mobile">
+                <div class="project-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    🏋️
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Fitness Tracker</h3>
+                    <p>App de acompanhamento de treinos com integração de wearables, análise de dados e planos personalizados.</p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">GraphQL</span>
+                        <span class="tag">ML</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="far fa-calendar"></i> 2025</span>
+                        <span class="project-status">Em Andamento</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="web">
+                <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    💬
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Chat em Tempo Real</h3>
+                    <p>Aplicação de mensagens instantâneas com chamadas de vídeo, compartilhamento de arquivos e criptografia.</p>
+                    <div class="project-tags">
+                        <span class="tag">Socket.io</span>
+                        <span class="tag">WebRTC</span>
+                        <span class="tag">Redis</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date"><i class="far fa-calendar"></i> 2024</span>
+                        <span class="project-status">Concluído</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2 class="section-title">Depoimentos</h2>
+        <p class="section-subtitle">O que meus clientes dizem sobre meu trabalho</p>
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Trabalho excepcional! O Patrick entregou um projeto além das minhas expectativas. 
+                    Profissionalismo, criatividade e atenção aos detalhes em cada etapa. Recomendo fortemente!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👨</div>
+                    <div class="author-info">
+                        <h4>João Silva</h4>
+                        <p>CEO, TechStart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p class="section-subtitle">Vamos transformar suas ideias em realidade</p>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>olintopatrick86@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Telefone</h4>
+                        <p>+55 (11) 96909-2670</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Localização</h4>
+                        <p>São Paulo, Brasil</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Horário</h4>
+                        <p>Seg - Sex: 9h às 18h</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Patrick <span style="color: var(--accent);">Olinto</span></h3>
+                <p>Desenvolvedor Full Stack apaixonado por criar experiências digitais incríveis.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Serviços</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Desenvolvimento Web</a></li>
+                    <li><a href="#">Apps Mobile</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Consultoria</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Receba novidades e dicas sobre desenvolvimento.</p>
+                <form style="margin-top: 1rem;">
+                    <input type="email" placeholder="Seu email" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid rgba(99, 102, 241, 0.2); background: var(--dark-bg); color: var(--text-primary); margin-bottom: 0.5rem;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.8rem;">Inscrever</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&amp;copy; 2025 Patrick Olinto Duarte. Todos os direitos reservados. Desenvolvido com 💜 e ☕</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
